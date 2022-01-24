@@ -1,0 +1,19 @@
+{
+  "name": "assistr",
+  "version": "1.0.0",
+  "description": "FYP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bilal-Ehsan/Student-Assistant.git"
+  },
+  "author": "Bilal Ehsan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bilal-Ehsan/Student-Assistant/issues"
+  },
+  "homepage": "https://github.com/Bilal-Ehsan/Student-Assistant#readme"
+}
