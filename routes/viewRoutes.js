@@ -5,6 +5,6 @@ const viewController = require('../controllers/viewController');
 
 const router = express.Router();
 
-router.get('/', viewController.displayTest);
+router.get('/', viewController.baseTest);
 
 module.exports = router;
