@@ -4,7 +4,7 @@
   "description": "FYP",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,14 @@
     "url": "https://github.com/Bilal-Ehsan/Student-Assistant/issues"
   },
   "homepage": "https://github.com/Bilal-Ehsan/Student-Assistant#readme",
+  "dependencies": {
+    "dotenv": "^14.3.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  },
   "devDependencies": {
     "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
