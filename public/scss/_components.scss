@@ -1,1 +1,115 @@
-// NOTE: Use me to make Sass code cleaner!
+.title {
+  color: var(--colour-light);
+  font-family: 'Caveat', cursive;
+  font-size: 3.75rem;
+  font-weight: 700;
+  z-index: 1;
+  background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  margin-top: 1rem;
+  position: relative;
+  user-select: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+
+  span {
+    display: block;
+    width: 3.3rem;
+    height: .4rem;
+    margin-bottom: .5rem;
+    position: relative;
+    background-color: var(--colour-light);
+    border-radius: .6rem;
+    transform-origin: 0 0; // Top left
+    transition: all .2s;
+  }
+
+  
+  &--is-active span:nth-child(1) {
+    transform: translate(0, -.2rem) rotate(45deg);
+  }
+  
+  &--is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translate(1.5rem);
+  }
+  
+  &--is-active span:nth-child(3) {
+    transform: translate(-.3rem, .3rem) rotate(-45deg);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover span:nth-child(2) {
+      transform: translateX(1rem);
+    }
+  }
+}
+
+.form {
+  width: 35rem;
+
+  &__title {
+    margin-bottom: 3.5rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: 2.25rem;
+    margin: 2.5rem 0 .5rem 0;
+  }
+
+  &__input {
+    display: block;
+    font-size: 1.75rem; 
+    padding: .75rem 1.15rem;
+    width: 100%;
+  }
+
+  &__btn {
+    margin-top: 4rem;
+    cursor: pointer;
+    padding: 1.2rem 2.2rem;
+    border-radius: 9.9rem;
+    background: linear-gradient(to right, #000000, #414141);
+    color: var(--colour-light);
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-.35rem);
+    }
+  }
+
+  &__sign-up {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.75rem;
+    margin-left: 2rem;
+    transition: all .2s;
+    display: inline-block;
+
+    &:hover {
+      border-bottom: 1px solid var(--colour-dark);
+      transform: translateY(-.35rem);
+    }
+  }
+}
+
+@media only screen and (min-width: 76.8rem) {
+  .hamburger {
+    display: none;
+  }
+}

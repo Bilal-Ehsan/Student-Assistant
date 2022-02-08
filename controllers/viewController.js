@@ -1,6 +1,6 @@
-exports.baseTest = async (_, res) => {
+exports.homeView = async (_, res) => {
   try {
-    res.status(200).render('base');
+    res.status(200).render('home');
   } catch (err) {
     res.status(404).json({
       status: 'fail',
