@@ -246,7 +246,12 @@ body {
 
 @media (hover: hover) and (pointer: fine) {
   .mobile-nav a:hover {
-    color: var(--colour-grey);
+    background: -webkit-gradient(linear, left top, right top, from(var(--colour-gradient-1)), to(var(--colour-gradient-2)));
+    background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
   }
 }
 
