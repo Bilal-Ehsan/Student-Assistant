@@ -282,6 +282,9 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .mobile-nav {
+    display: none;
+  }
 }
 
 .content {
