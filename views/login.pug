@@ -1,0 +1,14 @@
+extends base
+
+block content
+  .login-form
+    h2.form__title Account Log In
+    form.form
+      label.form__label(for='email') Email Address
+      input.form__input(type='email' required='')
+      
+      label.form__label(for='password') Password
+      input.form__input(type='password' required='' minlength='8')
+      
+      button.form__btn Log In
+      a.form__sign-up(href='#') Or sign up!
