@@ -205,7 +205,7 @@ body {
   list-style-type: none;
 }
 
-.menu__item:hover, .menu__item--is-active {
+.menu__item:hover {
   background: -webkit-gradient(linear, left top, right top, from(var(--colour-gradient-1)), to(var(--colour-gradient-2)));
   background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
   color: var(--colour-dark);

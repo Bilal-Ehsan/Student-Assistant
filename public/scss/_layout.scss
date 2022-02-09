@@ -33,8 +33,7 @@
     border-radius: 9.9rem;
     list-style-type: none;
 
-    &:hover,
-    &--is-active {
+    &:hover {
       background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
       color: var(--colour-dark);
     }
