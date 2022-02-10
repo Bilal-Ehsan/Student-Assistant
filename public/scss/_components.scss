@@ -78,6 +78,8 @@
     font-size: 1.75rem; 
     padding: .75rem 1.15rem;
     width: 100%;
+    border-radius: .375rem;
+    border: .1rem solid var(--colour-dark);
   }
 
   &__btn {
@@ -106,7 +108,7 @@
     display: inline-block;
 
     &:hover {
-      border-bottom: 1px solid var(--colour-dark);
+      border-bottom: .1rem solid var(--colour-dark);
       transform: translateY(-.35rem);
     }
   }

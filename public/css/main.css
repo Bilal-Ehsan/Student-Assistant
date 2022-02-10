@@ -121,6 +121,8 @@ body {
   font-size: 1.75rem;
   padding: .75rem 1.15rem;
   width: 100%;
+  border-radius: .375rem;
+  border: 0.1rem solid var(--colour-dark);
 }
 
 .form__btn {
@@ -154,7 +156,7 @@ body {
 }
 
 .form__sign-up:hover {
-  border-bottom: 1px solid var(--colour-dark);
+  border-bottom: 0.1rem solid var(--colour-dark);
   -webkit-transform: translateY(-0.35rem);
           transform: translateY(-0.35rem);
 }
