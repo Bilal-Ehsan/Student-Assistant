@@ -10,5 +10,6 @@ router.get('/', viewController.getHomeView);
 router.get('/dashboard', viewController.getDashboardView);
 router.get('/profile', viewController.getProfileView);
 router.get('/login', viewController.getLoginView);
+router.get('/register', viewController.getRegisterView);
 
 module.exports = router;

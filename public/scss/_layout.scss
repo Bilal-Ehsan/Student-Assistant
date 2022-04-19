@@ -62,10 +62,11 @@
     padding: 1.2rem 1.6rem;
     width: 100%;
     margin: 0 auto;
+    transition: all .2s;
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
-        font-weight: bold;
+        transform: scale(112.5%);
       }
     }
   }
@@ -75,7 +76,7 @@
   }
 }
 
-.login-form {
+.login-form, .sign-up {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 7.92rem);

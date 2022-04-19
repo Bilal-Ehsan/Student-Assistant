@@ -1,0 +1,18 @@
+extends base
+
+block content
+  .sign-up
+    h2.sign-up__title Account Sign Up
+    form.form
+      label.form__label Full Name
+      input.form__input(type='text' required spellcheck='false')
+
+      label.form__label Email Address
+      input.form__input(type='email' required spellcheck='false')
+
+      label.form__label Password
+        | 
+        span#eye 👁
+      input#password.form__input(type='password' required minlength='8' spellcheck='false')
+
+      button.form__btn Register

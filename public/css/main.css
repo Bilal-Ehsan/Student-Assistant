@@ -37,6 +37,7 @@ body {
   z-index: 1;
   background: -webkit-gradient(linear, left top, right top, from(var(--colour-gradient-1)), to(var(--colour-gradient-2)));
   background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
+  padding-right: .5rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,12 +103,13 @@ body {
   }
 }
 
-.form {
-  width: 35rem;
+.login-form__title,
+.sign-up__title {
+  margin-bottom: 3.5rem;
 }
 
-.form__title {
-  margin-bottom: 3.5rem;
+.form {
+  width: 35rem;
 }
 
 .form__label {
@@ -159,6 +161,11 @@ body {
   border-bottom: 0.1rem solid var(--colour-dark);
   -webkit-transform: translateY(-0.35rem);
           transform: translateY(-0.35rem);
+}
+
+#eye {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 76.8rem) {
@@ -247,11 +254,14 @@ body {
   padding: 1.2rem 1.6rem;
   width: 100%;
   margin: 0 auto;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .mobile-nav a:hover {
-    font-weight: bold;
+    -webkit-transform: scale(112.5%);
+            transform: scale(112.5%);
   }
 }
 
@@ -259,7 +269,7 @@ body {
   left: 0;
 }
 
-.login-form {
+.login-form, .sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

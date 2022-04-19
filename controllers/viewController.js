@@ -41,3 +41,14 @@ exports.getLoginView = async (_, res) => {
     });
   }
 };
+
+exports.getRegisterView = async (_, res) => {
+  try {
+    res.status(200).render('register');
+  } catch (err) {
+    res.status(404).json({
+      status: 'fail',
+      message: err
+    });
+  }
+};

@@ -5,6 +5,7 @@
   font-weight: 700;
   z-index: 1;
   background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
+  padding-right: .5rem; // Fixes gradient cutting off text issue
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,12 +61,13 @@
   }
 }
 
+.login-form__title,
+.sign-up__title {
+  margin-bottom: 3.5rem;
+}
+
 .form {
   width: 35rem;
-
-  &__title {
-    margin-bottom: 3.5rem;
-  }
 
   &__label {
     display: block;
@@ -112,6 +114,11 @@
       transform: translateY(-.35rem);
     }
   }
+}
+
+#eye {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 76.8rem) {
