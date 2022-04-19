@@ -5,7 +5,7 @@
   font-weight: 700;
   z-index: 1;
   background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
-  padding-right: .5rem; // Fixes gradient cutting off text issue
+  padding-right: .9rem; // Fixes gradient cutting off text issue
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
