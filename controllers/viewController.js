@@ -1,3 +1,5 @@
+// NOTE: Look at catchAsync function to remove duplicate code
+
 exports.getHomeView = async (_, res) => {
   try {
     res.status(200).render('home');

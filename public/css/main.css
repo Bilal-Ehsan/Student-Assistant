@@ -37,7 +37,7 @@ body {
   z-index: 1;
   background: -webkit-gradient(linear, left top, right top, from(var(--colour-gradient-1)), to(var(--colour-gradient-2)));
   background: linear-gradient(to right, var(--colour-gradient-1), var(--colour-gradient-2));
-  padding-right: .5rem;
+  padding-right: .9rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -163,9 +163,12 @@ body {
           transform: translateY(-0.35rem);
 }
 
-#eye {
-  font-size: 2.5rem;
+#password-visibility {
+  font-size: 1.5rem;
   cursor: pointer;
+  position: absolute;
+  top: 49.3rem;
+  left: 70rem;
 }
 
 @media only screen and (min-width: 76.8rem) {

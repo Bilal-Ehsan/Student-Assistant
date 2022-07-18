@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
-const eye = document.getElementById('eye');
+const passwordVisibility = document.getElementById('password-visibility');
 const password = document.getElementById('password');
 
 hamburger.addEventListener('click', function () {
@@ -8,10 +8,12 @@ hamburger.addEventListener('click', function () {
   mobileNav.classList.toggle('mobile-nav--is-active');
 });
 
-eye.addEventListener('mouseover', () => {
-  password.setAttribute('type', 'text');
+passwordVisibility.textContent = '[show]';
 
-  setTimeout(() => {
-    password.setAttribute('type', 'password');
-  }, 2000);
+passwordVisibility.addEventListener('click', () => {
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+
+  const text = passwordVisibility.textContent === '[hide]' ? '[show]' : '[hide]';
+  passwordVisibility.textContent = text;
 });
